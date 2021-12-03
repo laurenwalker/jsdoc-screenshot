@@ -13,6 +13,8 @@ This plugin uses a new tag, named @screenshot, whose value is an absolute or rel
 
 ![example](docs/example.png)
 
+You can view some live examples on the [MetacatUI documentation website](https://nceas.github.io/metacatui/docs/QueryBuilderView.html) which is the project I originally wrote this code for.
+
 ## Install
 1. Step 1. Add the `jsdoc-screenshot/src` directory with the `screenshot.js` file to whatever location you normally store your JSDoc plugins for your application and rename it to whatever you want (e.g. `screenshot`).
 
