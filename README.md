@@ -6,30 +6,30 @@ This plugin uses a new tag, named @screenshot, whose value is an absolute or rel
 
 ## To use
 
-`javascript
+```javascript
 @screenshot MyView.png
 @screenshot https://my-site.com/MyView.png
-``
+```
 
 ![example](docs/example.png)
 
 You can view some live examples on the [MetacatUI documentation website](https://nceas.github.io/metacatui/docs/QueryBuilderView.html) which is the project I originally wrote this code for.
 
 ## Install
-1. Step 1. Add the `jsdoc-screenshot/src` directory with the `screenshot.js` file to whatever location you normally store your JSDoc plugins for your application and rename it to whatever you want (e.g. `screenshot`).
+1. **Step 1.** Add the `jsdoc-screenshot/src` directory with the `screenshot.js` file to whatever location you normally store your JSDoc plugins for your application and rename it to whatever you want (e.g. `screenshot`).
 
-2. Step 2. Add this as a plugin to your JSDoc configuration. Specify a directory where your screenshot images will be stored (if you are storing all your images externally, this isn't necessary).
+2. **Step 2**. Add this as a plugin to your JSDoc configuration. Specify a directory where your screenshot images will be stored (if you are storing all your images externally, this isn't necessary).
 
 JSDoc config file snippet example:
 
-``json
+```json
   "plugins": ["jsdoc-plugins/screenshot"],
  "screenshot": {
    "dir": "../screenshots"
  }
-``
+```
 
-3. Step 3. Add the following code to any JSDoc template(s) where you want to show the screenshot image. You can customize this HTML however you'd like.
+3. **Step 3.** Add the following code to any JSDoc template(s) where you want to show the screenshot image. You can customize this HTML however you'd like.
 
 Example:
 
@@ -42,11 +42,11 @@ Example:
 <?js } ?>
 ```
 
-4. Step 4. Use the new @screenshot tag in your JSDoc comments.
+4. **Step 4.** Use the new @screenshot tag in your JSDoc comments.
 
 Example @screenshot tags:
 
-`javascript
+```javascript
 @screenshot MyView.png
 @screenshot https://my-site.com/MyView.png
-``
+```
